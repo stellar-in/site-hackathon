@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1140px;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+li,a{
+    text-decoration: none;
+    list-style: none;
+}
+/* HEADER */
+.header1{
+    background-color: black;
+}
+.header_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+.arrow{
+    width: 15px;
+}
+.live{
+    border: 1px solid rgb(249, 65, 41);
+    width: 50px;
+    color: white;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    font-weight: 600;
+}
+.explore{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.explore > a{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.explore > input{
+    background-color: black;
+    width: 150px;
+    height: 30px;
+    border: 1px solid rgb(61, 61, 61);
+}
+.explore > input::placeholder{
+    padding-left: 5px;
+}
+.logo{
+    width: 40px;
+}
+.Events{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.Events > ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.Events > ul li a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-weight: 500;
+}
+.ar{
+    width: 15px;
+}
+.header2{
+    background-color: rgb(23, 23, 27);
+}
+.header_container1 > ul{
+    display:flex ;
+    gap: 30px;
+    padding: 15px;
+}
+.header_container1 > ul li a{
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/* MAIN */
+.overview{
+    background-blend-mode: multiply;
+    background-image: url(../images_html/bg.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #070c17ab;
+}
+.overview_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.overview_content{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    gap: 15px;
+    padding-top: 200px;
+}
+.overview_content > h1{
+    font-size: 73px;
+}
+.overview_content > p{
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgb(188, 188, 188);
+}
+/* .solarsystem{
+    height: 1000px;
+} */
+.sun{
+    background-color: rgb(255, 225, 0);
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    position: absolute;
+    top: 300px;
+    left: 890px;
+    box-shadow: 0px 0px 60px rgb(255, 166, 0);
+    animation: circle 15s linear infinite;
+}
+.sun::after {
+    content: "Дополнительная информация";
+    position: absolute;
+    bottom: 100%; /* Позиция над элементом */
+    left: 50%;
+    /* transform: translateX(-50%); */
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0; /* Скрываем по умолчанию */
+    visibility: hidden; /* Скрываем по умолчанию */
+    transition: opacity 0.3s; /* Плавный переход */
+    z-index: 1;
+}
+
+.sun:hover::after {
+    opacity: 1; /* Показываем при наведении */
+    visibility: visible; /* Показываем при наведении */
+}
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.mars{
+    background: rgb(197, 80, 37);
+    width: 50px;
+    display: block;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    top: 330px;
+    left: 940px;
+    box-shadow: 0px 0px 60px rgb(255, 0, 0);
+    animation: mars 12s linear infinite;
+}
+@keyframes mars {
+    from {
+        transform: rotate(0deg) translateX(320%) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(320%) rotate(-360deg);
+    }
+}
+.describe_container{
+    padding: 50px 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.describe_container > h1{
+    font-size: 53px;
+    letter-spacing: 0.04em;
+
+}
+.describe_container > p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.third-block
+{
+    padding: 20px 0px 0px 0px;
+}
+.third-block iframe
+{
+    width: 100%;
+    height: 600px;
+}
+.fourth-block
+{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.fourth-block div p, h1
+{
+    padding: 0px 40px;
+}
+.block-row
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.block-row div
+{
+    width: 22%;
+    height: 400px;
+    background-size: cover;
+}
+.gas-giants{
+    background-image: url(../images_html/dusty-universe.webp);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #070c1760;
+    background-blend-mode: multiply;
+    color: white;
+    font-weight: 500;
+}
+.neptunian-planets{
+    background-image: url(../images_html/star.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #070c1760;
+    background-blend-mode: multiply;
+    color: white;
+    font-weight: 500;
+}
+.super-earths{
+    background-image: url(../images_html/galaxy.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #070c1760;
+    background-blend-mode: multiply;
+    color: white;
+    font-weight: 500;
+}
+.terristrial-planet{
+    background-image: url(../images_html/bl.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #070c1760;
+    background-blend-mode: multiply;
+    color: white;
+    font-weight: 500;
+}
+.block-row div p
+{
+    font-size: 22px;
+    padding: 330px 20px;
+}
+footer{
+    background-color: black;
+}
+.footer_container{
+    display: flex;
+    color: white;
+    padding: 70px 0px;
+    align-items: center;
+    gap: 70px;
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.content1 > img{
+    width: 50px;
+}
+.content1 > h4{
+    max-width: 400px;
+    font-size: 25px;
+}
+.content1 > p{
+    max-width: 370px;
+    color: rgb(187, 187, 187);
+    font-size: 16px;
+}
+.content1 > a{
+    color: white;
+}
+.footer_container  >ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer_container > ul li a{
+    color: white;
+}
