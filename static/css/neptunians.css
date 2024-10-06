@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1140px;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+li,a{
+    text-decoration: none;
+    list-style: none;
+}
+/* HEADER */
+.header1{
+    background-color: black;
+}
+.header_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+.arrow{
+    width: 15px;
+}
+.live{
+    border: 1px solid rgb(249, 65, 41);
+    width: 50px;
+    color: white;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    font-weight: 600;
+}
+.explore{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.explore > a{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.explore > input{
+    background-color: black;
+    width: 150px;
+    height: 30px;
+    border: 1px solid rgb(61, 61, 61);
+}
+.explore > input::placeholder{
+    padding-left: 5px;
+}
+.logo{
+    width: 40px;
+}
+.Events{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.Events > ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.Events > ul li a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-weight: 500;
+}
+.ar{
+    width: 15px;
+}
+.header2{
+    background-color: rgb(23, 23, 27);
+}
+.header_container1 > ul{
+    display:flex ;
+    gap: 30px;
+    padding: 15px;
+}
+.header_container1 > ul li a{
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.overview{
+    background-blend-mode: multiply;
+    background-image: url(https://science.nasa.gov/wp-content/uploads/2023/09/1802_428_exo-neptune_art_1600.jpg?w=4096&format=webp);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #070c17ab;
+}
+.overview_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.overview_content{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    gap: 15px;
+    padding-top: 200px;
+}
+.overview_content > h1{
+    font-size: 73px;
+}
+.overview_content > p{
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgb(188, 188, 188);
+}
+.information-block
+{
+    width: 1070px;
+    margin: 0 auto;
+}
+.information-block p
+{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.4;
+}
+.main-block
+{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.block-row p
+{
+    font-size: 22px;
+    padding: 300px 20px;
+    color: #fff;
+}
+.block-row
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.block-row div
+{
+    width: 22%;
+    height: 350px;
+    background-size: cover;
+    background-color: gray;
+}
+footer{
+    background-color: black;
+}
+.footer_container{
+    display: flex;
+    color: white;
+    padding: 70px 0px;
+    align-items: center;
+    gap: 70px;
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.content1 > img{
+    width: 50px;
+}
+.content1 > h4{
+    max-width: 400px;
+    font-size: 25px;
+}
+.content1 > p{
+    max-width: 370px;
+    color: rgb(187, 187, 187);
+    font-size: 16px;
+}
+.content1 > a{
+    color: white;
+}
+.footer_container  >ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer_container > ul li a{
+    color: white;
+}
+.planet1 {
+    background-image: url(../images_html/planets/neptun.png);
+}
+.not-planet {
+    background-image: url(../images_html/planets/IMG_20241006_163400.png);
+}
+.ss {
+    text-align: center;
+}

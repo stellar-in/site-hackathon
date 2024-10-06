@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1140px;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+li,a{
+    text-decoration: none;
+    list-style: none;
+}
+/* HEADER */
+.header1{
+    background-color: black;
+}
+.header_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+.arrow{
+    width: 15px;
+}
+.live{
+    border: 1px solid rgb(249, 65, 41);
+    width: 50px;
+    color: white;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    font-weight: 600;
+}
+.explore{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.explore > a{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.explore > input{
+    background-color: black;
+    width: 150px;
+    height: 30px;
+    border: 1px solid rgb(61, 61, 61);
+}
+.explore > input::placeholder{
+    padding-left: 5px;
+}
+.logo{
+    width: 40px;
+}
+.Events{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.Events > ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.Events > ul li a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-weight: 500;
+}
+.ar{
+    width: 15px;
+}
+.header2{
+    background-color: rgb(23, 23, 27);
+}
+.header_container1 > ul{
+    display:flex ;
+    gap: 30px;
+    padding: 15px;
+}
+.header_container1 > ul li a{
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.overview{
+    background-blend-mode: multiply;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fs--qhMWCOA2--%2F18loycx0cjofzjpg.jpg&f=1&nofb=1&ipt=8373c2d244e18043df3a0251f0c8737d93e068f3c1186ae944f05e80e106c895&ipo=images);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #070c17ab;
+}
+.overview_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.overview_content{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    gap: 15px;
+    padding-top: 200px;
+}
+.overview_content > h1{
+    font-size: 73px;
+}
+.overview_content > p{
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgb(188, 188, 188);
+}
+.information-block
+{
+    width: 1070px;
+    margin: 0 auto;
+}
+.information-block p
+{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.information-block ul
+{
+    text-align: center;
+    line-height: 2;
+    font-size: 18px;
+}
+.fourth-block
+{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.block-row
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.block-row div
+{
+    width: 22%;
+    height: 430px;
+    background-size: cover;
+}
+.gas-giants{
+    background-image: url(https://static.scientificamerican.com/sciam/cache/file/820799FC-0EAD-4718-975F69769504ABAD_source.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #070c1760;
+    background-blend-mode: multiply;
+    color: white;
+    font-weight: 500;
+}
+.neptunian-planets{
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2F85%2Fe3%2F83%2F85e383e5b97075d294c443d3d7f392e3--neptune-mass-planetary-system.jpg&f=1&nofb=1&ipt=f6856652e5c21a8853d315ad3120a6c37d04cc15a6c3054c4f8f765fc9d8a714&ipo=images);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #070c1760;
+    background-blend-mode: multiply;
+    color: white;
+    font-weight: 500;
+}
+.super-earths{
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.theconversation.com%2Ffiles%2F484712%2Foriginal%2Ffile-20220914-4859-4nvzdu.jpg%3Fixlib%3Drb-1.1.0%26rect%3D0%252C0%252C3479%252C1736%26q%3D45%26auto%3Dformat%26w%3D1356%26h%3D668%26fit%3Dcrop&f=1&nofb=1&ipt=44863bd35b125a7998e0190977caae36fa9192b8a2fa6c92be4c3373f51fd545&ipo=images);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #070c1760;
+    background-blend-mode: multiply;
+    color: white;
+    font-weight: 500;
+}
+.terristrial-planet{
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2022%2F04%2F05%2Fscience%2F02sci-exoplanets7%2F02sci-exoplanets7-videoSixteenByNine3000.jpg&f=1&nofb=1&ipt=e17c674a098f2caa1ca1bf0a9554801b40a957b1b47c4a5209373750e87947c7&ipo=images);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #070c1760;
+    background-blend-mode: multiply;
+    color: white;
+    font-weight: 500;
+}
+.block-row div p
+{
+    font-size: 20px;
+    color: #fff;
+    padding: 380px 20px;
+}
+footer{
+    background-color: black;
+}
+.footer_container{
+    display: flex;
+    color: white;
+    padding: 70px 0px;
+    align-items: center;
+    gap: 70px;
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.content1 > img{
+    width: 50px;
+}
+.content1 > h4{
+    max-width: 400px;
+    font-size: 25px;
+}
+.content1 > p{
+    max-width: 370px;
+    color: rgb(187, 187, 187);
+    font-size: 16px;
+}
+.content1 > a{
+    color: white;
+}
+.footer_container  >ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer_container > ul li a{
+    color: white;
+}
+.ss {
+    text-align: center;
+}

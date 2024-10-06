@@ -1,34 +1,42 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     margin: 0 auto;
     padding: 0;
     max-width: 1140px;
 }
-body{
+
+body {
     font-family: "Roboto", sans-serif;
 }
-li,a{
+
+li,
+a {
     text-decoration: none;
     list-style: none;
 }
+
 /* HEADER */
-.header1{
+.header1 {
     background-color: black;
 }
-.header_container{
+
+.header_container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 0px;
 }
-.arrow{
+
+.arrow {
     width: 15px;
 }
-.live{
+
+.live {
     border: 1px solid rgb(249, 65, 41);
     width: 50px;
     color: white;
@@ -37,57 +45,69 @@ li,a{
     display: flex;
     font-weight: 600;
 }
-.explore{
+
+.explore {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-.explore > a{
+
+.explore>a {
     color: white;
     font-size: 16px;
     font-weight: 600;
 }
-.explore > input{
+
+.explore>input {
     background-color: black;
     width: 150px;
     height: 30px;
     border: 1px solid rgb(61, 61, 61);
 }
-.explore > input::placeholder{
+
+.explore>input::placeholder {
     padding-left: 5px;
 }
-.logo{
+
+.logo {
     width: 40px;
 }
-.Events{
+
+.Events {
     display: flex;
     gap: 20px;
     align-items: center;
 }
-.Events > ul{
+
+.Events>ul {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.Events > ul li a{
+
+.Events>ul li a {
     display: flex;
     align-items: center;
     gap: 5px;
     color: white;
     font-weight: 500;
 }
-.ar{
+
+.ar {
     width: 15px;
 }
-.header2{
+
+.header2 {
     background-color: rgb(23, 23, 27);
 }
-.header_container1 > ul{
-    display:flex ;
+
+.header_container1>ul {
+    display: flex;
     gap: 30px;
     padding: 15px;
 }
-.header_container1 > ul li a{
+
+.header_container1>ul li a {
     color: white;
     font-weight: 600;
     font-size: 15px;
@@ -95,8 +115,9 @@ li,a{
     align-items: center;
     gap: 5px;
 }
+
 /* MAIN */
-.overview{
+.overview {
     background-blend-mode: multiply;
     background-image: url(../images_html/bg.png);
     background-position: top;
@@ -104,12 +125,14 @@ li,a{
     background-size: cover;
     background-color: #070c17ab;
 }
-.overview_container{
+
+.overview_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.overview_content{
+
+.overview_content {
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -118,106 +141,46 @@ li,a{
     gap: 15px;
     padding-top: 200px;
 }
-.overview_content > h1{
+
+.overview_content>h1 {
     font-size: 73px;
 }
-.overview_content > p{
+
+.overview_content>p {
     max-width: 600px;
     font-size: 18px;
     line-height: 28px;
     color: rgb(188, 188, 188);
 }
-/* .solarsystem{
-    height: 1000px;
-} */
-.sun{
-    background-color: rgb(255, 225, 0);
-    display: block;
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-    position: absolute;
-    top: 300px;
-    left: 890px;
-    box-shadow: 0px 0px 60px rgb(255, 166, 0);
-    animation: circle 15s linear infinite;
-}
-.sun::after {
-    content: "Дополнительная информация";
-    position: absolute;
-    bottom: 100%; /* Позиция над элементом */
-    left: 50%;
-    /* transform: translateX(-50%); */
-    background-color: #333;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    white-space: nowrap;
-    opacity: 0; /* Скрываем по умолчанию */
-    visibility: hidden; /* Скрываем по умолчанию */
-    transition: opacity 0.3s; /* Плавный переход */
-    z-index: 1;
-}
 
-.sun:hover::after {
-    opacity: 1; /* Показываем при наведении */
-    visibility: visible; /* Показываем при наведении */
-}
-@keyframes circle {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-.mars{
-    background: rgb(197, 80, 37);
-    width: 50px;
-    display: block;
-    height: 50px;
-    border-radius: 100%;
-    position: absolute;
-    top: 330px;
-    left: 940px;
-    box-shadow: 0px 0px 60px rgb(255, 0, 0);
-    animation: mars 12s linear infinite;
-}
-@keyframes mars {
-    from {
-        transform: rotate(0deg) translateX(320%) rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg) translateX(320%) rotate(-360deg);
-    }
-}
-.describe_container{
+.describe_container {
     padding: 50px 140px;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
-.describe_container > h1{
+
+.describe_container>h1 {
     font-size: 53px;
     letter-spacing: 0.04em;
-
 }
-.describe_container > p{
+
+.describe_container>p {
     font-size: 17px;
     font-weight: 400;
     line-height: 25px;
 }
-.third-block
-{
+
+.third-block {
     padding: 20px 0px 0px 0px;
 }
-.third-block iframe
-{
+
+.third-block iframe {
     width: 100%;
     height: 600px;
 }
-.fourth-block
-{
+
+.fourth-block {
     width: 1140px;
     margin: 0 auto;
     padding: 70px 0px;
@@ -225,24 +188,45 @@ li,a{
     flex-direction: column;
     gap: 40px;
 }
-.fourth-block div p, h1
-{
-    padding: 0px 40px;
-}
-.block-row
-{
+
+.block-row {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-.block-row div
-{
+
+.block-row div {
     width: 22%;
     height: 400px;
     background-size: cover;
 }
-.gas-giants{
-    background-image: url(../images_html/dusty-universe.webp);
+
+.gas-giants {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.kasperskydaily.com%2Fwp-content%2Fuploads%2Fsites%2F92%2F2016%2F01%2F06023143%2Fexoplanets-FB.jpg&f=1&nofb=1&ipt=a478f018772f2cb1f008fdb97cc6efb39f1472e22eb8957e4d92663ebe5f1261&ipo=images);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 150%;
+    background-color: #070c1760;
+    background-blend-mode: multiply;
+    color: white;
+    font-weight: 500;
+}
+
+.gas-giants>a p {
+    color: white;
+}
+
+.neptunian-planets>a p {
+    color: white;
+}
+
+.super-earths>a p {
+    color: white;
+}
+
+.neptunian-planets {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F018%2F911%2F722%2Foriginal%2Fnasa-space-company-editorial-logo-free-vector.jpg&f=1&nofb=1&ipt=37c7fb7b3e3d505ebbbc3aaedb7d8946e4e115620a4c534f084cef6993b5197e&ipo=images);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -251,8 +235,9 @@ li,a{
     color: white;
     font-weight: 500;
 }
-.neptunian-planets{
-    background-image: url(../images_html/star.png);
+
+.super-earths {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmindmatters.ai%2Fwp-content%2Fuploads%2Fsites%2F2%2F2021%2F07%2Fcolorful-exoplanet-insolated-on-black-stockpack-adobe-stock-1597x1597.jpg&f=1&nofb=1&ipt=623a3cf9bb5090f3e194e74c963e92df66f711e77bb4d6aeb21b79e07369f4fa&ipo=images);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -261,67 +246,60 @@ li,a{
     color: white;
     font-weight: 500;
 }
-.super-earths{
-    background-image: url(../images_html/galaxy.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #070c1760;
-    background-blend-mode: multiply;
-    color: white;
-    font-weight: 500;
-}
-.terristrial-planet{
-    background-image: url(../images_html/bl.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #070c1760;
-    background-blend-mode: multiply;
-    color: white;
-    font-weight: 500;
-}
-.block-row div p
-{
+
+.block-row div p {
     font-size: 22px;
     padding: 330px 20px;
 }
-footer{
+
+footer {
     background-color: black;
 }
-.footer_container{
+
+.footer_container {
     display: flex;
     color: white;
     padding: 70px 0px;
     align-items: center;
     gap: 70px;
 }
-.content1{
+
+.content1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
 }
-.content1 > img{
+
+.content1>img {
     width: 50px;
 }
-.content1 > h4{
+
+.content1>h4 {
     max-width: 400px;
     font-size: 25px;
 }
-.content1 > p{
+
+.content1>p {
     max-width: 370px;
     color: rgb(187, 187, 187);
     font-size: 16px;
 }
-.content1 > a{
+
+.content1>a {
     color: white;
 }
-.footer_container  >ul{
+
+.footer_container>ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.footer_container > ul li a{
+
+.footer_container>ul li a {
     color: white;
+}
+
+.ss {
+    font-size: 80;
 }
