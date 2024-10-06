@@ -48,6 +48,9 @@ def terristrial():
 def kepler_78():
     return render_template("kepler-78.html")
 
+@app.route("/study")
+def study():
+    return render_template("study.html")
 
 
 if __name__ == "__main__":
